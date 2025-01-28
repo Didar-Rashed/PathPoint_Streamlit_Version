@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "elemental-leaf-447704-i9",
+  "private_key_id": "3d3fed72129bb013d22fa8d8380d86f9e34b1c91",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQDBvKOBY28QTbxw\n7SWUeGMg6yrJkBvSqQIanBoaKqoLIYJ5rqHpDkfO2K2//UKNg7vAF/J6fvg8VjxX\n85HVccWqLidWrZEtAqpXAT2Drh6zsrKuyYUGOtyxORNoQRRN+jDKZ/zfQl2y3ocO\nGKZjOv9vdy7w/qjfaY5MZVsvhs2wFyjUZCsBbbL02Bdb+qEnaPQMW4EE8D/gsqhO\n0/lOZCBPJv0DN+lgwYLJDbeWj0MjyJrMzM04QFNqmnQTbP14C2BYBp4Pb705YZaJ\nEWujHOG+f0JHCiBOuSlQgWB4u8RP4/q95sVg+7276UJAMK2VlSGqIfUytP2TGUjj\nZ/uXxxEfAgMBAAECggEAFyjwWObkn4vTc6J95BZSL1y9lDP0h4XpuPmhSzB/fG4o\nlVhRhbVN00Xm23UwsA8n8ipKs+ca0Me0VgVJkT0VFqeGz19XZAyWBWmiC2xUwkGi\nB7AShXCi8lKy5bsl7L50d7XfrmbWIaxlc8NxnJowcAhM5cVjtbV+K9bQBEn2q86b\nPC92ZfsQWcACNv9XfNdmVti6JcMcsgn4DQBfoOcumOirhQyqg2PzxzijUwaoJUza\nhE7NHRtkWUxE9tUwBq3TluM7ByIwSPe/O7ml6cB+c/BmOt7jPqUk7JPgG14rh0El\nQ0FcbQBdUqDo97CqqMUeDXQXNN/QyrWMAN+lH3eyIQKBgQD+dDUUWwS5sBPnOgAg\nvp5YYWothkVilLJpSMBBwrAUi17KamL3JbVA99hEFGhrsbu8jx/jRJjo8ujq3Fqt\nqtTnxLfNEp1kbAlIqIxsKpiNmUCobvFSp/VK3xR3loqCnka9J578QCzOnn8Ws9+4\nUqOX9v7Ud7dlkiNOtspzqT7aYQKBgQDC6f0K30ippLD5xqnj82Pq+wuyJCFQ9wWN\nmBeVt4+H0PET39jVJa3NOUB6VRNo/Fn07dqdIi8zz44sCUVr7HSxklmNnTiTjGZ+\nz2riozHdOTKzjSJj1EUiAn88Ik9axmxS9dqHD9LcZEwz/dg1eM0DDlj4/2F2ZUw3\n82lED2CbfwKBgQCy4Q7PmIzh3R6g1u1wF5FJoHH8PwBYJSCnUzWVBUCzsKaatd+M\nzz10xseKVK5zxyarkBJiur6kRN/o+6/jlszFgk2UJRnwluKP6a2N/QPxx2LlBdkw\nulJ+qATDbVlCKfKg11G1E4hsWJAPbbRA6BeJpWHQC7kp9mpL08TPOpOtAQKBgQCp\n8kbVkfXTJGvCfPtoa7D1E0sRWftKkvdei/wUaGZXL1Dj2UtAHYg65e5YO5Ge+lic\n/D6ev02UySXXM4Y6IYNlyIsYtLq9u68qZkN1tIEnuFWCxE316QEWNEMn9WpnZZbR\nhtew55Uc4L6onm5DwT5PqdTd1h3uk0gviKaB1z6OlQKBgGYbQK0why9ggf1Qgav/\nql1h4URAARVfN3oCgIRAS2CVvNwXpPSXZ5m50Nhvi5teIFurjx4dljs1MQQpREVj\nG4r+Bjb4QEqc+FDg+FA29t5Cra8xtn0G2P3h4tJj9k/YspEGlbexWehbWTUl8gn4\nVi+F2AOk6/fvaG6OGWYlWNym\n-----END PRIVATE KEY-----\n",
+  "client_email": "sheets-service-account@elemental-leaf-447704-i9.iam.gserviceaccount.com",
+  "client_id": "113437719917060691933",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/sheets-service-account%40elemental-leaf-447704-i9.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}

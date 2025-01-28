@@ -14,6 +14,7 @@ import io
 from datetime import date
 import re
 import pandas as pd
+import json
 
 # Set environment variable for SSL
 os.environ['SSL_CERT_FILE'] = certifi.where()
@@ -25,10 +26,17 @@ TIME_FORMAT = "%I:%M %p"  # 12-hour format with AM/PM
 # Google Sheets connection
 def connect_to_gsheet(sheet_name="PathPoint_Streemlit_Version"):
     try:
+        # Load credentials from st.secrets
+        credentials_json = st.secrets["google_service_account"]["credentials"]
+        credentials_dict = json.loads(credentials_json)
+
+        # Define the scope
         scope = ['https://spreadsheets.google.com/feeds', 'https://www.googleapis.com/auth/drive']
-        credentials = ServiceAccountCredentials.from_json_keyfile_name(
-            r'C:\Users\didar1004064\Documents\Streamlit_Data_Collection_App\elemental-leaf-447704-i9-3d3fed72129b.json', scope
-        )
+
+        # Create credentials object from the JSON
+        credentials = ServiceAccountCredentials.from_json_keyfile_dict(credentials_dict, scope)
+        
+        # Authorize and connect to the Google Sheet
         client = gspread.authorize(credentials)
         return client.open(sheet_name)
     except Exception as e:
@@ -40,10 +48,14 @@ def upload_to_google_drive(image):
     if not image:
         return None
     try:
-        credentials = Credentials.from_service_account_file(
-            r'C:\Users\didar1004064\Documents\Streamlit_Data_Collection_App\elemental-leaf-447704-i9-3d3fed72129b.json',
-            scopes=["https://www.googleapis.com/auth/drive"]
-        )
+        # Load credentials from st.secrets
+        credentials_json = st.secrets["google_service_account"]["credentials"]
+        credentials_dict = json.loads(credentials_json)
+
+        # Create credentials object for Google Drive
+        credentials = Credentials.from_service_account_info(credentials_dict, scopes=["https://www.googleapis.com/auth/drive"])
+
+        # Upload the image to Google Drive
         drive_service = build('drive', 'v3', credentials=credentials)
         image_bytes = io.BytesIO(image.getvalue())
         media = MediaIoBaseUpload(image_bytes, mimetype='image/jpeg')
@@ -53,6 +65,7 @@ def upload_to_google_drive(image):
     except Exception as e:
         st.error(f"Failed to upload image to Google Drive: {e}")
         return None
+
 
 # Function to format time as 12-hour format
 def format_time(hour, minute, am_pm):
